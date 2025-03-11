@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Consumo de Água</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Consumo de Água</h1>
+        <div class="jarra">
+            <div class="agua" id="agua"></div>
+        </div>
+        <div class="total-consumo">
+            <p>Total Consumido: <span id="total" class="total">0</span> </p>
+        </div>
+        <div class="buttons">
+            <button onclick="adicionarConsumo(250)">+ 250 ml</button>
+            <button onclick="adicionarConsumo(500)">+ 500 ml</button>
+            <button onclick="adicionarConsumo(1000)">+ 1 L</button>
+        </div>
+        <p id="data-consumo">Última data de consumo: Nenhuma ainda</p>
+    </div>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>

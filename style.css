@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 500px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.total-consumo p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    padding: 10px 40px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.jarra {
+    position: relative;
+    width: 100px;
+    height: 300px;
+    border: 5px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.agua {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #00aaff;
+    transition: height 0.5s ease-in-out;
+}
+
+.total {
+    color: crimson;
+}
+
+.suficiente {
+    color: green;
+}
+
+.total-consumo p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+#data-consumo {
+    padding-top: 50px;
+}
+
+/* Media Queries para telas maiores que 600px 
+ @media (max-width: 1024px) and (min-width: 768px)  {
+    .container {
+        width: 40%;  
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .total-consumo {
+        font-size: 20px;
+    }
+
+    #total {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 11px;
+    }
+
+    .buttons {
+        display: flexbox;
+    }
+} */
+
+/* Para smartphones (modo retrato) */
+@media (max-width: 767px) {
+    .container {
+        width: 80%;
+        height: 75%;
+  }
+
+  .container h1 {
+    font-size: 20px;
+  }
+
+  .jarra {
+    position: relative;
+    width: 100px;
+    height: 250px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 20px; 
+    }
+
+    .total-consumo p {
+        font-size: 15px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;  /* Alinha os botões verticalmente */
+        gap: 10px;  /* Adiciona um espaçamento entre os botões */
+    }
+
+
+}
